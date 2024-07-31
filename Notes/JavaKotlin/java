@@ -1,0 +1,4 @@
+##### JAVA
+nano ~/.bashrc # add java_home dir
+
+echo 'export PATH="~/development/flutter/bin:$PATH"' >> ~/.bash_profile

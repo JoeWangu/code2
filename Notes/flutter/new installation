@@ -1,0 +1,17 @@
+sudo apt-get install libstdc++6
+sudo apt install libstdc++-12-dev
+sudo apt install build-essential
+sudo apt install clang libstdc++-dev
+sudo apt install build-essential clang
+sudo apt-get install cmake
+sudo apt-get install clang
+flutter clean
+flutter build linux
+
+## OTHERS
+flutter clean
+flutter pub get
+flutter run
+
+
+flutter run --output=/home/skydiver/development/flutter_builds

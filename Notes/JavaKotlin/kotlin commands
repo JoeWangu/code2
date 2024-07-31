@@ -1,0 +1,12 @@
+echo $JAVA_HOME
+
+java -version
+javac -version
+./gradlew --version
+
+update-alternatives --config java
+
+nano ~/.bashrc
+
+./gradlew wrapper --gradle-version 8.9
+

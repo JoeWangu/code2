@@ -1,0 +1,43 @@
+tar -xf ~/Downloads/flutter_linux_3.22.3-stable.tar.xz -C ~/development/flutter/
+flutter doctor -v
+flutter doctor --android-licenses
+flutter --disable-analytics
+flutter upgrade
+
+apt install clang
+apt install cmake
+apt install ninja-build
+apt install libgtk-3-dev
+
+flutter doctor -v
+which firefox
+which vivaldi
+
+echo $CHROME_EXECUTABLE
+echo $PATH
+echo $SHELL
+echo $0
+clang++ --version
+
+#sudo apt-get install build-essential
+#sudo apt-get install libstdc++6
+#sudo apt-get install clang
+sudo apt-get install libgtk-3-0 libblkid1 liblzma5
+#sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+#sudo apt install clang libstdc++-dev
+sudo apt install libstdc++-12-dev
+sudo apt install build-essential clang
+sudo apt-get install libc6:amd64 libstdc++6:amd64 libbz2-1.0:amd64 libncurses5:amd64 lib32z1
+sudo apt-get install -y curl git unzip xz-utils zip libglu1-mesa
+
+ls /usr/lib/x86_64-linux-gnu/libstdc++.so.*
+
+flutter clean
+flutter pub get
+flutter run
+flutter build linux
+
+which bash file mkdir rm which
+
+
+

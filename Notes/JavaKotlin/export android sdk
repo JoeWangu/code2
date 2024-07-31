@@ -1,0 +1,2 @@
+export ANDROID_SDK_ROOT=/home/skydiver/development/Android/Sdk
+export PATH="$PATH:/home/skydiver/development/Android/Sdk/cmdline-tools/bin"

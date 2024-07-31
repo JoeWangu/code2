@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "formidable": "^3.5.1",
+    "mysql2": "^3.10.3",
+    "nodemailer": "^6.9.14"
+  }
+}

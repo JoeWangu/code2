@@ -1,0 +1,153 @@
+ls
+cd Desktop
+
+cat skydiver.xspf
+nano ~/.bashrc
+sudo nano /etc/netplan/*.yaml
+sudo nano /etc/sysctl.conf
+
+ip -6 addr show
+ping -c 4 google.com
+sudo sysctl -p
+
+exit
+
+sudo apt update
+apt list --upgradable
+sudo apt upgrade
+sudo apt autoremove
+sudo apt clean
+
+sudo ufw status
+sudo ufw status
+sudo ufw disable
+sudo ufw enable
+sudo ufw allow http
+sudo ufw allow https
+
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo add-apt-repository ppa:graphics-drivers/ppa
+
+wget -O /tmp/netdata-kickstart.sh https://get.netdata.cloud/kickstart.sh && sh /tmp/netdata-kickstart.sh --no-updates --stable-channel --disable-telemetry
+wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3-3_all.deb
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bookworm/winehq-bookworm.sources
+
+sudo apt install code
+#sudo apt install wine
+sudo apt install --install-recommends winehq-stable
+sudo apt install wine64
+sudo apt install winetricks
+sudo apt install putty
+sudo apt-get install qemu-system
+sudo apt install virt-manager
+sudo apt install stacer
+apt install usrmerge
+sudo apt install libayatana-appindicator3-1 gir1.2-ayatanaappindicator3-0.1 gnome-shell-extension-appindicator
+sudo apt install proton-vpn-gnome-desktop
+sudo apt install ffmpeg obs-studio
+sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
+sudo apt install vulkan-tools
+sudo apt install dxvk
+
+systemctl list-units --type=service
+
+sudo dpkg -i ./protonvpn-stable-release_1.0.3-3_all.deb && sudo apt update
+sudo dpkg --add-architecture i386
+
+sudo systemd-resolve --flush-caches
+sudo systemctl restart dnsmasq
+sudo systemctl status NetworkManager
+sudo systemctl restart NetworkManager
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+journalctl -xe | grep NetworkManager
+sudo nano /etc/NetworkManager/NetworkManager.conf
+
+sudo iptables -L
+
+rm -rf ~/.config/Code
+rm -rf ~/.vscode
+
+wine winbox64.exe
+winetricks vcrun2015
+winetricks mfc140
+winetricks corefonts
+ls ~/.wine/drive_c/windows/system32/mfc140u.dll
+wine uninstaller
+
+ip a
+hostname -I
+nmcli dev status
+ip route | grep default
+ip route
+ip link
+sudo ip add add 192.168.8.55/24 dev wlp3s0
+ip route
+sudo ip add add 192.168.88.2/24 dev wlp3s0
+ip route
+sudo ip addr del 192.168.88.2/24 dev wlp3s0
+ip route
+sudo ip link set wlp3s0 down
+sudo ip link set wlp3s0 up
+
+xdg-open http://captive.apple.com
+xdg-open http://neverssl.com
+xdg-open http://captive.apple.com
+xdg-open http://neverssl.com
+
+nmcli device show
+
+sudo truncate -s 0 /var/log/syslog
+sudo truncate -s 0 /var/log/kern.log
+sudo truncate -s 0 /var/log/ufw.log
+sudo truncate -s 0 /var/log/auth.log
+sudo dmesg -C
+sudo journalctl --rotate
+sudo journalctl --vacuum-time=600s
+sudo journalctl --vacuum-size=100M
+sudo nano /etc/logrotate.conf
+sudo logrotate -f /etc/logrotate.conf
+df -h
+sudo du -sh /var/log/*
+sudo crontab -e
+sudo nano /etc/logrotate.conf
+sudo crontab -e
+nano /etc/logrotate.conf
+nano /etc/logrotate.d
+
+sudo apt-get clean
+sudo apt-get autoclean
+sudo apt-get autoremove
+
+virt-manager
+
+rm ~/.local/share/keyrings/*
+cd ~/.local/share/keyrings
+
+cd ~/.config/autostart
+
+df -T
+{"This command displays information about disk space usage and the type of filesystems for each mounted filesystem. -T flag adds a column showing the filesystem type (e.g., ext4, xfs, tmpfs)."}
+
+
+mount | grep -E '^/dev|tmpfs
+{"This command lists all currently mounted filesystems and filters the output to show only those that are mounted from device files (/dev) or are of type tmpfs.
+The grep -E command uses extended regular expressions to match lines that start with /dev or contain tmpfs."}
+
+chmod +x dolphin-anty-linux-x86_64-latest.AppImage
+
+sudo apt install qemu-kvm libvirt-daemon-system virtinst libvirt-clients bridge-utils
+sudo systemctl start libvirtd
+sudo systemctl status libvirtd
+sudo usermod -aG libvirt $USER
+sudo usermod -aG kvm $USER
+sudo systemctl restart libvirtd
+
+vulkaninfo
+
+vnstat
+vnstat --days 1
+vnstat --hours 5
+
+

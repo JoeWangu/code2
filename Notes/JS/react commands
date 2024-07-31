@@ -1,0 +1,31 @@
+node -v
+npm -v
+
+npm install
+npm install --force
+
+npm create vite@latest
+
+npm update --save
+npm audit fix --force
+npm start
+
+npm install sqlite3
+npm install express cors dotenv sqlite3
+npm install mysql2
+npm install
+npm i bootstrap@latest
+
+npm install formidable
+npm install nodemailer
+npm install mysql
+npm install mysql2@latest
+npm uninstall mysql
+
+npm list --depth=0
+
+npm run dev
+
+npm start
+rm -rf node_modules
+rm package-lock.json

@@ -1,0 +1,50 @@
+##### MYSQL
+
+## installing
+sudo apt install mysql-server
+sudo mysql_secure_installation
+sudo systemctl status mysql
+
+
+## running
+sudo systemctl start mysql      # Start MySQL service
+sudo systemctl stop mysql       # Stop MySQL service
+sudo systemctl restart mysql    # Restart MySQL service
+sudo systemctl enable mysql     # Enable MySQL to start on boot
+sudo systemctl disable mysql    # Disable MySQL from starting on boot
+
+sudo mysql -u root -p  # Log in to the MySQL root account
+SHOW DATABASES; # Show Databases
+CREATE DATABASE my_database; # Create a Database
+CREATE USER 'skydiver'@'localhost' IDENTIFIED BY 'SQLPassword12#'; # Create a User
+GRANT ALL PRIVILEGES ON my_database.* TO 'my_user'@'localhost'; FLUSH PRIVILEGES; # Grant Privileges
+SELECT User, Host FROM mysql.user; # Show Users
+DROP DATABASE my_database; # Drop a Database
+DROP USER 'my_user'@'localhost'; # Drop a User
+SHOW GRANTS FOR 'skydiver'@'localhost';
+
+
+## Ensure Required Packages are Installed
+
+## If you encounter missing package errors, you might need to install additional packages. For most cases, mysql-server should handle dependencies, but you might need to manually install specific packages depending on the distribution.
+
+sudo apt install libmysqlclient-dev  # Ubuntu/Debian
+
+## install workbench
+sudo apt install mysql-workbench
+mysql-workbench # Launch MySQL Workbench
+
+### Other Commands
+SHOW DATABASES;
+SHOW TABLES;
+DESCRIBE table_name;
+SHOW COLUMNS FROM table_name;
+SHOW CREATE TABLE table_name;
+SHOW INDEXES FROM table_name;
+SHOW TABLE STATUS LIKE 'table_name';
+SELECT * FROM information_schema.columns WHERE table_name = 'table_name';
+
+
+customers
+
+

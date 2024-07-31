@@ -1,0 +1,16 @@
+sudo apt install mysql-server
+sudo mysql_secure_installation
+
+sudo systemctl status mysql
+sudo systemctl disable mysql
+sudo systemctl start mysql
+sudo systemctl stop mysql
+
+sudo apt install mysql-workbench
+
+sudo mysql -u root -p
+mysql -u skydiver -p
+
+sudo journalctl -u mysql
+
+exit
